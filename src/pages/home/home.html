@@ -12,10 +12,10 @@
 
   <section class="seccion">
       <div class="boton">
-          <button ion-button round (click)="play()" id="ply" >
+          <button ion-button round (click)="play()" *ngIf="bplay" id="ply" >
            
           </button>
-          <button ion-button round  (click)="pause()" id="psu">
+          <button ion-button round  (click)="pause()" *ngIf="bpause" id="psu">
             
           </button>
       </div>
