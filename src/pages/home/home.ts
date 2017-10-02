@@ -18,9 +18,12 @@ export class HomePage {
   	this.player.play().then(() => {
   		console.log('Playing');
   	});
+      this.status = false;
+    
   }
-
+ 
   pause() {
   	this.player.pause();
+     this.status = true;
   }
 }
